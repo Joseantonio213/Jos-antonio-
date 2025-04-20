@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>José Antonio | Assistência Técnica & Serviços</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>José Antonio</h1>
+    <p>Assistência Técnica | Segurança do Trabalho</p>
+  </header>
+
+  <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="container">
+    <section id="servicos" class="section">
+      <h2>Serviços</h2>
+      <ul>
+        <li>🔧 Manutenção de computadores e notebooks</li>
+        <li>📱 Conserto de celulares</li>
+        <li>🔍 Consulta veicular</li>
+        <li>🛡️ Técnico em Segurança do Trabalho</li>
+      </ul>
+    </section>
+
+    <section id="sobre" class="section">
+      <h2>Sobre mim</h2>
+      <p>Sou técnico em informática com experiência em assistência técnica e estou cursando Técnico em Segurança do Trabalho. Meu objetivo é oferecer serviços de qualidade com confiança e agilidade.</p>
+    </section>
+
+    <section id="contato" class="section">
+      <h2>Contato</h2>
+      <p>Entre em contato pelo WhatsApp ou clique no botão abaixo:</p>
+      <button class="btn" onclick="enviarMensagem()">Fale comigo</button>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 José Antonio - Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    function enviarMensagem() {
+      const numero = "5565999319028";
+      const mensagem = "Olá, José Antonio! Tenho interesse em seus serviços.";
+      const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+      window.open(link, '_blank');
+    }
+  </script>
+
+</body>
+</html>
